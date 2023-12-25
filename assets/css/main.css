@@ -1,0 +1,616 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  background-color: #FFA800;
+}
+header nav {
+  width: 100%;
+  margin: auto;
+}
+header nav .collapseDiv {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+#World {
+  width: 100%;
+  height: 650px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://preview.colorlib.com/theme/invest/images/home_slider_1.jpg");
+}
+#World .container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#World .container .WorldItem {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #0f0e0d;
+  opacity: 0.7;
+  padding: 20px;
+}
+#World .container .WorldItem h1 {
+  font-size: 55px;
+  color: white;
+}
+#World .container .WorldItem p {
+  width: 70%;
+  margin-top: 10px;
+  font-size: 13px;
+  color: white;
+  font-weight: 500;
+}
+#World .container .WorldItem button {
+  width: 140px;
+  height: 50px;
+  border: none;
+  margin-top: 10px;
+  background-color: #FFA800;
+  color: white;
+  font-weight: 500;
+}
+#World .container .WorldItem button:hover {
+  color: #FFA800;
+  background-color: white;
+}
+
+#ApiProducts {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFA800;
+}
+#ApiProducts .container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#ApiProducts .container .ApiProductsHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#ApiProducts .container #productList {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+#ApiProducts .container #productList .boxDiv {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+#ApiProducts .container #productList .boxDiv img {
+  width: 100%;
+  height: auto;
+}
+#ApiProducts .container #productList .boxDiv .title {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+#ApiProducts .container #productList .boxDiv .price {
+  font-size: 20px;
+  font-weight: 600;
+  color: red;
+}
+#ApiProducts .container #productList .boxDiv button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 40px;
+  border: none;
+  background-color: brown;
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+}
+#ApiProducts .container #productList .boxDiv button:hover {
+  background-color: black;
+  cursor: pointer;
+}
+#ApiProducts .container #pagi {
+  width: 160px;
+  height: 40px;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+}
+#ApiProducts .container #pagi:hover {
+  background-color: red;
+}
+
+#Bitcoin {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  background-color: #F5F9FA;
+}
+#Bitcoin .container {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+#Bitcoin .container .BitcoinItem {
+  margin-top: 20px;
+}
+#Bitcoin .container .BitcoinItem .line {
+  width: 60px;
+  height: 2px;
+  margin-top: 20px;
+  background-color: #FFA800;
+}
+#Bitcoin .container .BitcoinItem .text {
+  margin-top: 20px;
+}
+#Bitcoin .container .BitcoinItem .text span {
+  color: gray;
+  font-size: 12px;
+}
+#Bitcoin .container .BitcoinItem .text h3 {
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+}
+#Bitcoin .container .BitcoinItem p {
+  margin-top: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.92;
+  font-weight: 400;
+  color: gray;
+}
+#Bitcoin .container .BitcoinItem button {
+  width: 140px;
+  height: 50px;
+  border: none;
+  margin-top: 10px;
+  background-color: #FFA800;
+  color: white;
+  font-weight: 500;
+}
+#Bitcoin .container .BitcoinItem button:hover {
+  color: #FFA800;
+  background-color: white;
+}
+#Bitcoin .container .BitcoinItem img {
+  width: 100%;
+  height: auto;
+}
+
+#Crypto {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  position: relative;
+}
+#Crypto .container {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+#Crypto .container .CryptoHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#Crypto .container .CryptoHeader .CryptoLine {
+  width: 60px;
+  height: 2px;
+  margin-top: 20px;
+  background-color: #FFA800;
+}
+#Crypto .container .CryptoHeader span {
+  margin-top: 20px;
+  color: gray;
+  font-size: 12px;
+}
+#Crypto .container .CryptoHeader h3 {
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+}
+#Crypto .container .CryptoCard {
+  margin: 20px;
+  background-color: #F5F9FA;
+}
+#Crypto .container .CryptoCard img {
+  width: 100%;
+  height: auto;
+}
+#Crypto .container .CryptoCard .Cryptotext {
+  padding: 20px;
+}
+#Crypto .container .CryptoCard .Cryptotext h5 {
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+}
+#Crypto .container .CryptoCard .Cryptotext p {
+  padding-top: 20px 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.92;
+  font-weight: 400;
+  color: gray;
+}
+#Crypto .container .CryptoCard .Cryptotext button {
+  width: 140px;
+  height: 40px;
+  border: none;
+  margin-top: 10px;
+  background-color: white;
+  color: #FFA800;
+  font-weight: 500;
+  position: absolute;
+  margin-top: 5px;
+}
+#Crypto .container .CryptoCard .Cryptotext button:hover {
+  color: #FFA800;
+  background-color: white;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  border-top: 1px solid rgb(228, 220, 220);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .container {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+footer .container .foot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  background-color: #FFA800;
+}
+header nav {
+  width: 100%;
+  margin: auto;
+}
+header nav .collapseDiv {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+#World {
+  width: 100%;
+  height: 650px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://preview.colorlib.com/theme/invest/images/home_slider_1.jpg");
+}
+#World .container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#World .container .WorldItem {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  opacity: 0.7;
+  padding: 20px;
+}
+#World .container .WorldItem h1 {
+  font-size: 55px;
+  color: white;
+}
+#World .container .WorldItem p {
+  width: 70%;
+  margin-top: 10px;
+  font-size: 13px;
+  color: white;
+  font-weight: 500;
+}
+#World .container .WorldItem button {
+  width: 140px;
+  height: 50px;
+  border: none;
+  margin-top: 10px;
+  background-color: #FFA800;
+  color: white;
+  font-weight: 500;
+}
+#World .container .WorldItem button:hover {
+  color: #FFA800;
+  background-color: white;
+}
+
+#Productfiltered {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  background-color: #FFA800;
+}
+#Productfiltered .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#Product {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  background-color: #FFA800;
+}
+#Product .container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#Product .container #products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  text-align: center;
+}
+#Product .container #products .box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 25%;
+}
+#Product .container #products .box img {
+  width: 100%;
+  height: auto;
+}
+#Product .container #products .box .title {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+#Product .container #products .box .price {
+  font-size: 20px;
+  font-weight: 600;
+  color: red;
+}
+#Product .container #products .box button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 40px;
+  border: none;
+  background-color: brown;
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+}
+#Product .container #products .box button:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  border-top: 1px solid rgb(228, 220, 220);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .container {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+footer .container .foot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  background-color: #FFA800;
+}
+header nav {
+  width: 100%;
+  margin: auto;
+}
+header nav .collapseDiv {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+#World {
+  width: 100%;
+  height: 650px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://preview.colorlib.com/theme/invest/images/home_slider_1.jpg");
+}
+#World .container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#World .container .WorldItem {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #0f0e0d;
+  opacity: 0.7;
+  padding: 20px;
+}
+#World .container .WorldItem h1 {
+  font-size: 55px;
+  color: white;
+}
+#World .container .WorldItem p {
+  width: 70%;
+  margin-top: 10px;
+  font-size: 13px;
+  color: white;
+  font-weight: 500;
+}
+#World .container .WorldItem button {
+  width: 140px;
+  height: 50px;
+  border: none;
+  margin-top: 10px;
+  background-color: #FFA800;
+  color: white;
+  font-weight: 500;
+}
+#World .container .WorldItem button:hover {
+  color: #FFA800;
+  background-color: white;
+}
+
+#FormMethod {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+}
+#FormMethod .container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#displayCard .container #display {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+#displayCard .container #display .box {
+  width: 250px;
+  padding: 25px;
+  background-color: bisque;
+  box-shadow: 0 1px 10px rgb(0, 0, 0);
+}
+#displayCard .container #display .box span {
+  font-weight: 500;
+  font-size: 18px;
+}
+#displayCard .container #display .box button {
+  color: #fff;
+  background-color: brown;
+  transition: 1s;
+  padding: 10px;
+  border-radius: 20px;
+  display: flex;
+  gap: 10px;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+}
+#displayCard .container #display .box button:hover {
+  color: white;
+  color: black;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  border-top: 1px solid rgb(228, 220, 220);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .container {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+footer .container .foot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
